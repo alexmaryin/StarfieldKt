@@ -1,0 +1,5 @@
+package = platform.SDL2
+headers = SDL2/SDL.h
+compilerOpts = -I/usr/include -I/usr/include/x86_64-linux-gnu -I/usr/include/SDL2 -D_POSIX_SOURCE
+compilerOpts.linux = -D_REENTRANT
+linkerOpts = -L/usr/lib/x86_64-linux-gnu/ -L/usr/lib64 -lSDL2
